@@ -35,7 +35,6 @@ async def download_handler(client: Client, message: Message):
         async for chunk in client.stream_media(message=media, limit=2):
             file.write(chunk)
     print('Done')
-    message.download
 
 
 # Code was Taken from EverythingSuckz's file_properties.py file
